@@ -260,7 +260,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
     sync_btn.click(manual_sync, outputs=None)
     
     # Auto-refresh the log output every 5 seconds
-    demo.load(read_live_logs, inputs=None, outputs=live_log_output, every=5)
+    demo.load(read_live_logs, inputs=None, outputs=live_log_output)
 
 # ================= RENDER DEPLOYMENT =================
 if __name__ == "__main__":
